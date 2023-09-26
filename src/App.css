@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito";
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 16px;
+}
+
+body {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  width: 100vw;
+  padding: 4px;
+  background-color: #40634A;
+  color: white;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: calc(100vh - 24px);
+  min-width: 80vw;
+}
+
+.title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.title img {
+  width: 325px;
+  object-fit: contain;
+}
+
+.title span {
+  font-size: 45px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 100%;
+  height: 100%;
+  gap: 6px;
+}
+
+.cookies, .actions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  width: 100%;
+  height: 100%;
+  padding: 8px;
+  border: 1px solid #71b083;
+  border-radius: 12px;
+}
+
+.actions { 
+  height: fit-content;
+  margin-bottom: 4px;
+}
+
+.actions div {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  width: 100%;
+}
+
+.footer {
+  width: full;
+  text-align: center;
+  padding: 8px 0;
+}
+
+table {
+  border: 1px solid white;
+  border-collapse: collapse;
+  text-align: center;
+  width: 100%;
+}
+
+th, td {
+  border: 1px solid white;
+  padding: 4px;
+}
+
+input {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #71b083;
+  padding: 4px;
+  color: white;
+  transition: background-color .5s linear;
+}
+
+input:focus {
+  background-color: #71b083;
+  outline: none;
+}
+
+button {
+  padding: 12px;
+  border: none;
+  background-color: #71b083;
+  color: white;
+  opacity: .6;
+  transition: opacity .4s linear;
+  width: 100%;
+}
+
+button:hover {
+  opacity: .9;
+}
+
+button:disabled {
+  cursor: not-allowed;
+}
+
+button:disabled:hover {
+  opacity: .6;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  transition: color .5s linear;
+}
+
+a:hover {
+  color: #71b083;
+}
+
+@media screen and (max-width: 605px) {
+  .content {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
