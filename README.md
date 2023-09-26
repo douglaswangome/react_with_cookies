@@ -1,8 +1,4 @@
-# React + Vite
+# React with Cookies
+The web application uses the "js-cookie" package to save, retrieve and delete Cookies.\
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+To learn more, read my <a href="https://medium.com/@ishdagnesh/how-to-store-cookies-in-react-js-with-vite-6eaf3872d895">article</a>
