@@ -49,7 +49,7 @@ const App = () => {
     <div className="main">
       <div className="title">
         <img src="/cookies.png" alt="cookies" />
-        <span>Cookies</span>
+        <span>Cookie monster</span>
       </div>
       <div className="content">
         <div className="cookies">
